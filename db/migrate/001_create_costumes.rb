@@ -7,3 +7,13 @@
 # Define a change method in which to do the migration
 # In this change method, create columns with the correct names and 
 # value types according to the spec
+
+class CreateToppings < ActiveRecord::Migration[5.2]
+  def change
+    create_table :toppings do |t|
+        t.string "name"
+        t.boolean "vegetable"
+        t.integer "pizza_id"
+    end
+  end
+end
