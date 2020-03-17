@@ -8,7 +8,7 @@ class CreateCostumeStore < ActiveRecord::Migration[5.2]
         t.integer "costume_inventory"
         t.boolean "in_business"
         t.timestamp "opening_time"
-        t.timestamp "closing"
+        t.timestamp "closing_time"
     end
   end
 end
